@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<script>
+  /*
+  c) Elaborar um programa para uma loja, o qual leia o preço de um produto e informe as opções de pagamento da loja. Calcule e informe o valor para pagamento à vista com 10% de desconto e o valor em 3x.
+  */
+
+  // lê valor do produto
+  var valor_prod = Number(prompt("Informe o valor do produto:" ));
+
+  // calcula valores
+  var valor_desc = valor_prod - (valor_prod * 0.10);
+  var valor_parc = valor_prod /3;
+  
+  // exibe valores
+  alert("Pagamento parcelado em 3x de: " + valor_parc.toFixed(2) + "\nPagamento á vista com 10% de desconto: " + valor_desc);
+</script>
