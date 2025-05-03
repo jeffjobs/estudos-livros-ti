@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    <title>Exercício 2.a</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="card">
+      <h1>Farmácia JS</h1>
+      
+      <form>
+        <div>
+          <label for="inRemedio">medicamento</label>
+          <input id="inRemedio" type="text" placeholder="Paracetamol" required />
+        </div>
+  
+        <div>
+          <label for="inPreco">preço</label>
+          <input id="inPreco" type="number" placeholder="R$" required min="0" step="0.01" />
+        </div>
+  
+        <div>
+          <input id="btVerPromo" type="button" value="Mostrar Promoção" />
+        </div>
+      </form>
+
+      <h3 id="outPromo"></h3>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
